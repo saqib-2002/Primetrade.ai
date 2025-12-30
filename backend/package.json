@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for primetrade.ai assignment",
+  "homepage": "https://github.com/saqib-2002/Primetrade.ai#readme",
+  "bugs": {
+    "url": "https://github.com/saqib-2002/Primetrade.ai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saqib-2002/Primetrade.ai.git"
+  },
+  "license": "ISC",
+  "author": "saqib",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
