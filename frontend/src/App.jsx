@@ -1,7 +1,6 @@
-import Button from "@mui/material/Button";
-import Navbar from "./components/layout/Navbar";
+import Home from "./pages/HomePage";
 
 const App = () => {
-  return <Navbar />;
+  return <Home />;
 };
 export default App;
