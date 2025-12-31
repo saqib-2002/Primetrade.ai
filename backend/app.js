@@ -1,12 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 
 import connectDB from "./src/config/db.js";
 dotenv.config();
 
 import authRoutes from "./src/routes/auth.routes.js";
-import cookieParser from "cookie-parser";
+import taskRoutes from "./src/routes/task.routes.js";
 
 const PORT = process.env.PORT || 8000;
 const app = express();
@@ -26,6 +27,7 @@ app.use(
 
 // routes
 app.use("/api/auth", authRoutes); // authRoutes
+app.use("/api/tasks", taskRoutes); // tasksRoutes
 
 // Global error handler
 app.use((err, req, res, next) => {
